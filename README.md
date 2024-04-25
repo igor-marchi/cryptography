@@ -89,6 +89,44 @@ Aqui estão as solicitações HTTP presentes no arquivo:
     GET http://localhost:8080/transactions?page=0&size=11
     ```
 
-Para executar essas solicitações no IntelliJ IDEA, você pode abrir o arquivo `request.http` e clicar no ícone de reprodução verde ao lado de cada solicitação.
+3. **Listar Transação por id**
 
-Feito com amor por [Igor Marchi](https://www.linkedin.com/in/igor-marchi/) ❤️
+    Este é um exemplo de uma solicitação GET para listar uma transação específica pelo id. A URL da solicitação é `http://localhost:8080/transactions/{{id}}`. O `{{id}}` é um placeholder que deve ser substituído pelo id da transação que você deseja visualizar.
+
+    ```http
+
+    ### List Transaction by id
+
+    GET http://localhost:8080/transactions/{{id}}
+    ```
+
+4. **Atualizar Transação**
+
+    Este é um exemplo de uma solicitação PUT para atualizar uma transação existente. A URL da solicitação é `http://localhost:8080/transactions/{{id}}`. O `{{id}}` é um placeholder que deve ser substituído pelo id da transação que você deseja atualizar. O corpo da solicitação é um objeto JSON que contém os detalhes da transação que você deseja atualizar.
+
+    ```http
+
+    ### Update Transaction
+
+    PUT http://localhost:8080/transactions/{{id}}
+    Content-Type: application/json
+
+    {
+    "amount": 100
+    }
+    ```
+
+5. **Deletar Transação por id**
+
+    Este é um exemplo de uma solicitação DELETE para deletar uma transação específica pelo id. A URL da solicitação é `http://localhost:8080/transactions/{{id}}`. O `{{id}}` é um placeholder que deve ser substituído pelo id da transação que você deseja deletar.
+
+    ```http
+
+    ### Delete Transaction by id
+
+    DELETE http://localhost:8080/transactions/{{id}}
+    ```
+
+Para executar essas solicitações no Visual Studio Code, você pode instalar a extensão "REST Client" e abrir o arquivo `request.http`. Clique no link "Send Request" que aparece acima de cada solicitação.
+
+<p align="center">Feito com amor por <a href="https://www.linkedin.com/in/igor-marchi/">Igor Marchi</a> ❤️</p>

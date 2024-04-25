@@ -1,0 +1,28 @@
+@id = 6
+
+### Create Transaction
+POST http://localhost:8080/transactions
+Content-Type: application/json
+
+{
+  "userDocument": "1234567891011",
+  "creditCardToken": "abcd12345",
+  "amount": 2000
+}
+
+### List Transactions
+GET http://localhost:8080/transactions?page=0&size=11
+
+### List Transaction by id
+GET http://localhost:8080/transactions/{{id}}
+
+### Update Transaction
+PUT http://localhost:8080/transactions/{{id}}
+Content-Type: application/json
+
+{
+  "amount": 100
+}
+
+### Delete Transaction by id
+DELETE http://localhost:8080/transactions/{{id}}

@@ -17,9 +17,9 @@ Para clonar o projeto, execute o seguinte comando no terminal:
 git clone https://github.com/igor-marchi/cryptography.git
 ```
 
-## Subindo o Docker
+## Subindo o banco de dados (MySQL)
 
-Para subir o Docker, navegue até a pasta docker no diretório do projeto e execute o seguinte comando:
+Para subir o banco de dados, navegue até a pasta docker no diretório do projeto e execute o seguinte comando:
 
 ```bash
 docker-compose up

@@ -51,6 +51,9 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 -   `POST /transactions`: Cria uma nova transação.
 -   `GET /transactions`: Lista todas as transações.
+-   `GET /transactions/{{id}}`: Lista uma transação específica pelo id.
+-   `PUT /transactions/{{id}}`: Atualiza uma transação existente.
+-   `DELETE /transactions/{{id}}`: Deleta uma transação específica pelo id.
 
 Para mais detalhes sobre os endpoints, consulte os arquivos `TransactionController.java` e `request.http`.
 
